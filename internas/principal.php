@@ -40,7 +40,7 @@ $hora = hora();
         <li><a href="proceso.php?variable=<?php $completo;?>">
 
             Registrar proceso</a></li>
-        <li><a href="prueba.php">
+        <li><a href="audiencias.php">
             Registrar audiencia</a></li>
         <li><a href="">
             Salir</a></li>
