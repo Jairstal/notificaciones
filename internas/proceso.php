@@ -15,7 +15,7 @@ $hora = hora();
     <title>
         Principal dashboard
     </title>
-    <link href="..//css/estilos.css" rel="stylesheet" type="text/css">
+    <link href="..//css/estilos2.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 </head>
@@ -86,7 +86,7 @@ $hora = hora();
     
     </form>
 
-      <!--Sección ventana desplegable para loggin -->
+      <!--Sección ventana desplegable para loggin 
       <div class="overlay" id="overlay">
         <div class="popup" id="popup">
             <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
@@ -99,7 +99,7 @@ $hora = hora();
                 <input type="submit">
             </form>
         </div>
-    </div>
+    </div>-->
 
 
 
