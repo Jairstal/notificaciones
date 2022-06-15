@@ -3,9 +3,10 @@
 <html>
 
 <?php
-
-$nombre = $_GET["nombre22"];
-$apellido = $_GET["apellido22"];
+include 'funciones.php';
+$completo = nombres();
+$fecha = fecha();
+$hora = hora();
 
 ?>
 <head>
@@ -22,25 +23,24 @@ $apellido = $_GET["apellido22"];
 
 <body>
     <nav class="menuPrincipal">
-        <a href="">
-            Inicio
-        </a>
-        <a href="">
-            Consejo de la judicatura
-        </a>
-        <a href="">
-            Transparencia
-        </a>
-        <a >
-            Bienvenido/a <?php echo "$nombre $apellido"; ?>
-        </a>
+        <h4>
+        Fecha de hoy: <?php echo $fecha ?>
+        </h4>
+        <h4>
+        Hora: <?php echo $hora->format('h:i:s A'); ?>
+        </h4>
+        <h4 >
+            Bienvenido/a <?php echo $completo ?>
+        </h4>
     </nav>
     <aside>
         <img  src="../images/logowhite.png" >
         <nav class="menuLateral">
-        <li><a  href="proceso.php">
+
+        <li><a href="proceso.php?variable=<?php $completo;?>">
+
             Registrar proceso</a></li>
-        <li><a href="">
+        <li><a href="prueba.php">
             Registrar audiencia</a></li>
         <li><a href="">
             Salir</a></li>
@@ -50,6 +50,8 @@ $apellido = $_GET["apellido22"];
     </aside>
 
 </body>
+
+
 </html>
 
 

@@ -2,11 +2,12 @@
 <html>
 
 <?php
-
-$nombre = $_GET["nombre22"];
-$apellido = $_GET["apellido22"];
-
+include 'funciones.php';
+$completo = nombres();
+$fecha = fecha();
+$hora = hora();
 ?>
+
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width,
@@ -21,35 +22,91 @@ $apellido = $_GET["apellido22"];
 
 <body>
     <nav class="menuPrincipal">
-        <a href="">
-            JAAAAAAA
-        </a>
-        <a href="">
-            Consejo de la judicatura
-        </a>
-        <a href="">
-            Transparencia
-        </a>
-        <a >
-            Bienvenido/a <?php echo "$nombre $apellido"; ?>
-        </a>
+        <h4>
+            Fecha de hoy:
+            <?php echo $fecha ?>
+        </h4>
+        <h4>
+            Hora:
+            <?php echo $hora->format('h:i:s A'); ?>
+        </h4>
+        <h4>
+            Bienvenido/a
+            <?php echo $completo ?>
+        </h4>
     </nav>
     <aside>
-        <img  src="../images/logowhite.png" >
+        <img src="../images/logowhite.png">
         <nav class="menuLateral">
-        <li href="/proceso.php">
-            Registrar proceso
-</li>
-        <li href="">
-            Registrar audiencia
-</li>
-        <li href="">
-            Salir
-</li>
 
-    </nav>
+
+            <li><a href="proceso.php?variable=<?php $completo;?>">
+
+                    Registrar proceso</a></li>
+            <li><a href="prueba.php">
+                    Registrar audiencia</a></li>
+            <li><a href="">
+                    Salir</a></li>
     </aside>
 
+    <form method="post" action="procesar.php">
+
+        <div class="grupoInput">
+        <div class="grupoInput">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="ingrese nombre del proceso">
+            </div>
+        <div class="grupoInput">
+                    <label for="fecha">Fecha inicio:</label>
+                    <input type=date name="fecha" id="fecha">
+                </div>
+            <label for="tipoUser">Tipo proceso:</label>
+            <select id="tipoUser" name="tipoUser">
+                <option> -- </option>
+                <option value="1">Penal</option>
+                <option value="2">Transito</option>
+            </select>
+            </div>
+
+            <div class="grupoInput">
+                <label for="codproces">Codigo proceso:</label>
+                <input type="text" name="codproces" id="codproces" placeholder="ingrese codigo proceso">
+            </div>
+
+                
+    </form>
+    <form method="post" action="prueba.php">
+
+        <div class="grupoInput">
+
+    <div class="grupoInput">
+    <label for="cedula">Cédula:</label>
+    <input type="text" name="cedula" id="cedula" placeholder="ingrese cédula implicado"></div>
+    <button value="Buscar" class="btn-sadsad-popup" id="btn-abrir-popup">Buscar</button>
+    
+    </form>
+
+      <!--Sección ventana desplegable para loggin -->
+      <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h4>Registro de implicados.</h4>
+            <form method="post" action="procesar.php">
+                <div class="contenedor-inputs">
+                    <input type="text" name="nombte" id="nombre" placeholder="nombres">
+                    <input type="text" name="apellidos" id="apellidos" placeholder="apellidos">
+                </div>
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+
+
+
+
+
 </body>
+<script src="persona.js"></script>
+
 </html>
 
