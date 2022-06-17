@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 
@@ -18,7 +17,6 @@ function fecha()
 
 function hora()
 {
-
     $hora = new DateTime("now", new DateTimeZone('America/Guayaquil'));
     return $hora;
 }

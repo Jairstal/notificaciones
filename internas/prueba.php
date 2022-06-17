@@ -18,7 +18,7 @@ while ($fila = mysqli_fetch_assoc($result)) {
 <!DOCTYPE html>
 <html>
 
-<?phpif ($count == 1) {?>
+<?php if ($count == 1) { ?>
 
     <div class="overlay" id="overlay">
         <div class="popup" id="popup">
@@ -34,12 +34,9 @@ while ($fila = mysqli_fetch_assoc($result)) {
         </div>
     </div>
 
+<?php } ?>
 
-    <?php}else {?>
-
-
-        <?php}?>
-
-<<script src="persona.js"></script>
+<script src="persona.js">
+</script>
 
 </html>
