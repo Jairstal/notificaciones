@@ -20,11 +20,9 @@ while ($fila = mysqli_fetch_assoc($result)) {
 // Validar si $username and $password son correctos $count devuelve 1
 
 if ($count == 1) {
-
     $_SESSION['nombre'] = $nombre2;
     $_SESSION['apellido'] = $apellido2;
     header("Location: internas/principal.php");
-
 } else {
     echo "<script>
 alert(' Los datos son incorrectos');

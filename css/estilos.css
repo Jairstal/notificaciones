@@ -3,11 +3,13 @@
   margin: 0;
   border: 0;
 }
+
 body {
   background: #ffffff;
   width: 100%;
   font-family: "Open Sans", sans-serif;
 }
+
 .menuPrincipal,
 .sliderPrincipal,
 main,
@@ -17,12 +19,14 @@ main,
   width: 95%;
   margin: 0 auto;
 }
+
 .menuPrincipal {
   background-color: #06052c;
   text-align: center;
   padding-top: 25px;
   height: 60px;
 }
+
 .menuPrincipal a {
   text-decoration: none;
   font-family: "Almarai", sans-serif;
@@ -32,6 +36,7 @@ main,
 
   font-weight: bold;
 }
+
 .menuPrincipal h4 {
   text-decoration: none;
   font-family: "Almarai", sans-serif;
@@ -41,12 +46,14 @@ main,
   color: rgb(255, 255, 255);
   font-weight: bold;
 }
+
 .menuPrincipal a:hover {
   background-color: #ffb700;
   padding: 5px 67px;
   color: #06052c;
   transition: 1s;
 }
+
 .sliderPrincipal img {
   width: 100%;
   padding-top: 60px;
