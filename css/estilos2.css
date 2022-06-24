@@ -8,7 +8,6 @@
 
 body {
   background: #ffffff;
-  width: 100%;
   /* font-family: "Open Sans", sans-serif; */
 }
 
@@ -175,7 +174,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 18rem;
   background-color: #3beff5;
 }
 
@@ -250,6 +249,7 @@ body {
   border-collapse: collapse;
   background-color: #ffffff;
   font-size: 1rem;
+  text-align: center;
 }
 
 .contenedor-principal .formulario > .tabla-implicados > table > thead {
@@ -290,7 +290,32 @@ body {
 .app > .piePagina {
   background-color: #fff;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   border-top: #dbdbdb 1px solid;
+  margin: 0 2rem;
+}
+
+.piePagina img {
+  width: 60px;
+  height: 50px;
+}
+
+.piePagina .redes_sociales {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+.piePagina .redes_sociales > .twitter {
+  color: #00acee;
+}
+.piePagina .redes_sociales > .facebook {
+  color: #3b5998;
+}
+.piePagina .redes_sociales > .instagram {
+  color: #cc6666;
 }

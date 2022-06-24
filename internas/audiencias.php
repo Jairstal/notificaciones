@@ -40,7 +40,7 @@ $hora = hora();
         <nav class="menuLateral">
 
 
-            <li><a href="proceso.php?variable=<?php $completo;?>">
+            <li><a href="proceso.php?variable=<?php $completo; ?>">
 
                     Registrar proceso</a></li>
             <li><a href="prueba.php">
@@ -52,46 +52,47 @@ $hora = hora();
     <form method="post" action="procesar.php">
 
         <div class="grupoInput">
-        <div class="grupoInput">
+            <div class="grupoInput">
                 <label for="nombre">Nombre:</label>
                 <input type="text" name="nombre" id="nombre" placeholder="ingrese nombre del proceso">
             </div>
             <div class="grupoInput">
-                    <label for="hora">Hora:</label>
-                    <input type=time name="hora" id="hora">
-                </div>
-        <div class="grupoInput">
-                    <label for="fecha">Fecha inicio:</label>
-                    <input type=date name="fecha" id="fecha">
-                </div>
+                <label for="hora">Hora:</label>
+                <input type=time name="hora" id="hora">
+            </div>
+            <div class="grupoInput">
+                <label for="fecha">Fecha inicio:</label>
+                <input type=date name="fecha" id="fecha">
+            </div>
             <label for="tipoUser">Tipo proceso:</label>
             <select id="tipoUser" name="tipoUser">
                 <option> -- </option>
                 <option value="1">Penal</option>
                 <option value="2">Transito</option>
             </select>
-            </div>
+        </div>
 
-            <div class="grupoInput">
-                <label for="codproces">Codigo proceso:</label>
-                <input type="text" name="codproces" id="codproces" placeholder="ingrese codigo proceso">
-            </div>
+        <div class="grupoInput">
+            <label for="codproces">Codigo proceso:</label>
+            <input type="text" name="codproces" id="codproces" placeholder="ingrese codigo proceso">
+        </div>
 
-                
+
     </form>
     <form method="post" action="prueba.php">
 
         <div class="grupoInput">
 
-    <div class="grupoInput">
-    <label for="cedula">Cédula:</label>
-    <input type="text" name="cedula" id="cedula" placeholder="ingrese cédula implicado"></div>
-    <button value="Buscar" class="btn-sadsad-popup" id="btn-abrir-popup">Buscar</button>
-    
+            <div class="grupoInput">
+                <label for="cedula">Cédula:</label>
+                <input type="text" name="cedula" id="cedula" placeholder="ingrese cédula implicado">
+            </div>
+            <button value="Buscar" class="btn-sadsad-popup" id="btn-abrir-popup">Buscar</button>
+
     </form>
 
-      <!--Sección ventana desplegable para loggin -->
-      <div class="overlay" id="overlay">
+    <!--Sección ventana desplegable para loggin -->
+    <div class="overlay" id="overlay">
         <div class="popup" id="popup">
             <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
             <h4>Registro de implicados.</h4>
@@ -113,4 +114,3 @@ $hora = hora();
 <script src="persona.js"></script>
 
 </html>
-
