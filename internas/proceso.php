@@ -87,29 +87,13 @@ include_once '../templates/menuLateral.inc.php';
 
         </form>
 
-        <!--Sección ventana desplegable para loggin 
-            <div class="overlay" id="overlay">
-            <div class="popup" id="popup">
-                <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
-                <h4>Registro de implicados.</h4>
-                <form method="post" action="procesar.php">
-                    <div class="contenedor-inputs">
-                        <input type="text" name="nombte" id="nombre" placeholder="nombres">
-                        <input type="text" name="apellidos" id="apellidos" placeholder="apellidos">
-                    </div>
-                    <input type="submit">
-                </form>
-            </div>
-        </div>-->
+
     </div>
 
 </main>
 
-<footer class="piePagina">
-    <p>Este el footer</p>
-</footer>
-
 <?php
 $scriptsWeb = ['../js/persona.js'];
+include_once '../templates/footer.inc.php';
 include_once '../templates/cierre.inc.php';
 ?>

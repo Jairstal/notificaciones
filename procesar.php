@@ -26,6 +26,6 @@ if ($count == 1) {
 } else {
     echo "<script>
 alert(' Los datos son incorrectos');
-window.location= 'http://localhost/proyectoweb/notificaciones/index.html'
+window.location= '/index.html'
 </script>";
 }

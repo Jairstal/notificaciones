@@ -4,66 +4,66 @@ $estilosWeb = ['css/estilos.css'];
 include_once 'templates/cabeceras.inc.php'
 ?>
 
-<!--menú superior-->
-<nav class="menuPrincipal">
+  <!--menú superior-->
+  <nav class="menuPrincipal">
     <a href="">
-        Inicio
+      Inicio
     </a>
     <a href="">
-        Consejo de la judicatura
+      Consejo de la judicatura
     </a>
     <a href="">
-        Transparencia
+      Transparencia
     </a>
     <a class="btn-sadsad-popup" id="btn-abrir-popup">
-        Ingresar
+      Ingresar
     </a>
-</nav>
+  </nav>
 
-<!--Sección ventana desplegable para loggin -->
-<div class="overlay" id="overlay">
+  <!--Sección ventana desplegable para loggin -->
+  <div class="overlay" id="overlay">
     <div class="popup" id="popup">
-        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
-        <h3>Ingreso al sistema</h3>
-        <h4>por favor ingrese sus credenciales.</h4>
-        <form method="post" action="procesar.php">
-            <div class="contenedor-inputs">
-                <input type="text" name="usuario" id="usuario" placeholder="usuario">
-                <input type="password" name="contraseña" id="contraseña" placeholder="contraseña">
-            </div>
-            <input type="submit" class="btn-submit" value="Ingresar">
-        </form>
+      <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+      <h3>Ingreso al sistema</h3>
+      <h4>por favor ingrese sus credenciales.</h4>
+      <form method="post" action="procesar.php">
+        <div class="contenedor-inputs">
+          <input type="text" name="usuario" id="usuario" placeholder="usuario">
+          <input type="password" name="contraseña" id="contraseña" placeholder="contraseña">
+        </div>
+        <input type="submit" class="btn-submit" value="Ingresar">
+      </form>
     </div>
-</div>
+  </div>
 
 
-<section class="sliderPrincipal">
+  <section class="sliderPrincipal">
     <img alt="Slider" src="images/slide1.png" title="sliderPrincipal">
     </img>
-</section>
+  </section>
 
 
-<main>
+  <main>
     <h2 class=" h2Home">
-        Búsqueda de procesos judiciales
+      Búsqueda de procesos judiciales
     </h2>
     <div id='search-box'>
-        <form action='/search' id='search-form' method='get' target='_top'>
-            <input id='search-text' name='q' placeholder='Ingresa el código de proceso' type='text' />
+      <form action='/search' id='search-form' method='get' target='_top'>
+        <input id='search-text' name='q' placeholder='Ingresa el código de proceso' type='text'/>
 
-        </form>
+      </form>
     </div>
-</main>
+  </main>
 
-<footer class="piePagina">
+  <footer class="piePagina">
     <h6>
-        Derechos reservados 2022
+      Derechos reservados 2022
     </h6>
-</footer>
+  </footer>
 
 <?php
 $scriptsWeb = [
-    'js/popup.js'
+  'js/popup.js'
 ];
 
 include_once 'templates/cierre.inc.php'
