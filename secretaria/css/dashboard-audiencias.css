@@ -1,0 +1,117 @@
+/* Panel audiencias */
+
+.panel-audiencias > .panel-audiencia {
+  width: 1fr;
+  flex-grow: 1;
+  border-radius: 1rem;
+  border: 3px solid #111111;
+  margin: 1rem 2rem;
+  display: flex;
+  position: relative;
+}
+
+@media only screen and (min-width: 480px) {
+  .panel-audiencias > .panel-audiencia {
+    width: calc(100% - 2rem);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .panel-audiencias > .panel-audiencia {
+    width: calc(100% - 2rem);
+    /*max-width: calc(50% - 2rem);*/
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .panel-audiencias > .panel-audiencia {
+    width: calc(50% - 4rem);
+    /*max-width: calc(50% - 4rem);*/
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .panel-audiencias > .panel-audiencia {
+    width: calc(33.33% - 6rem);
+    max-width: calc(33.33% - 6rem);
+  }
+}
+
+.panel-audiencia > .hora {
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.panel-audiencia > .datos {
+  padding: 0.5rem 1rem 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  row-gap: 0.75rem;
+}
+
+.panel-audiencia > .datos > .titulo {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #06052c;
+}
+
+.panel-audiencia > .datos > .implicados,
+.panel-audiencia > .datos > .info-audiencia {
+  font-size: 0.9rem;
+  color: #50506f;
+  width: 100%;
+}
+
+.panel-audiencia > .datos > .info-audiencia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-right: 1.25rem;
+  width: 100%;
+}
+
+.panel-audiencia > .datos > .info-audiencia > .info-audiencia-valores {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.panel-audiencia > .datos > .info-audiencia > .info-audiencia-valores > p {
+  text-align: right;
+}
+
+.panel-audiencia > .audiencia-btn,
+.panel-audiencia > .audiencia-btn > .btn-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.panel-audiencia > .audiencia-btn {
+  position: absolute;
+  top: calc(50% - (4rem / 2));
+  right: calc(-4rem / 2);
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(255, 183, 0, 0.6);
+  cursor: pointer;
+}
+
+.panel-audiencia > .audiencia-btn > .btn-circle {
+  width: 3.25rem;
+  height: 3.25rem;
+  background-color: #ffb700;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+}

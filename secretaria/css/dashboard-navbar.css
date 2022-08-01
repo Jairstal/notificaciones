@@ -1,0 +1,10 @@
+/* Menu Superior */
+
+.menuPrincipal {
+    background-color: #06052c;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #ffffff;
+}

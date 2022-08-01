@@ -1,0 +1,42 @@
+/* Footer */
+.app > .piePagina {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: #dbdbdb 1px solid;
+    margin: 0 2rem;
+}
+
+.piePagina .piePagina-img {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.piePagina img {
+    width: 100%;
+}
+
+.piePagina .redes_sociales {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.piePagina .redes_sociales > .twitter {
+    color: #00acee;
+}
+
+.piePagina .redes_sociales > .facebook {
+    color: #3b5998;
+}
+
+.piePagina .redes_sociales > .instagram {
+    color: #cc6666;
+}

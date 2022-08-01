@@ -1,0 +1,86 @@
+/* Menu Lateral */
+.aside {
+  background-color: #06052c;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0;
+  row-gap: 2rem;
+}
+
+.aside > .brand-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aside > .brand-logo > a,
+.aside > .brand-logo img {
+  max-width: 10rem;
+}
+
+.aside > .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.aside > .menu > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+}
+
+.aside > .menu > ul > li {
+  min-height: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 0.2s ease-in-out;
+}
+
+.aside > .menu > ul > li > a,
+.aside > .menu > ul > li > p {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffb700;
+
+  transition: color 0.2s ease-in-out;
+}
+
+.aside > .menu > ul > li:hover,
+.aside > .menu > ul > li:hover {
+  background-color: #ffb700;
+}
+
+.aside > .menu > ul > li:hover > a,
+.aside > .menu > ul > li:hover > p {
+  color: #06052c;
+}
+
+.aside > .calendario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 18rem;
+  background-color: #3beff5;
+}

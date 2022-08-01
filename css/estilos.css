@@ -8,10 +8,18 @@ body {
   width: 100%;
   font-family: "Open Sans", sans-serif;
 }
+
+.main-container {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .menuPrincipal,
 .sliderPrincipal,
-main,
-.piePagina {
+main {
   background: #fff;
   color: #fff;
   width: 95%;
@@ -87,7 +95,9 @@ main,
   width: 90%;
   padding: 8px 0 12px 1em;
   align-items: center;
-  display: inline-grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #333;
   outline: none;
 }
@@ -97,10 +107,9 @@ main,
   border-radius: 15px;
   background-color: #eae2e2;
   overflow: hidden;
-  width: 50%;
   display: flex;
-  position: relative;
-  left: 320px;
+  max-width: 50rem;
+  width: 100%;
 }
 #search-text {
   font-size: 14px;
@@ -110,10 +119,11 @@ main,
 }
 
 #search-box input[type="text"] {
-  width: 90%;
-  padding: 8px 0 12px 1em;
   color: #333;
   outline: none;
+  width: 100%;
+  height: 2rem;
+  padding: 0 1rem;
 }
 
 .contenedor {
@@ -233,14 +243,47 @@ main,
   animation: entradaInputs 1s linear 1s forwards;
 }
 
+/* Footer */
 .piePagina {
-  background-color: #83897d;
-  color: rgb(0, 0, 0);
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: #dbdbdb 1px solid;
+  margin: 0 2rem;
 }
 
-.piePagina h6 {
-  text-align: center;
-  padding: 2em 0;
+.piePagina .piePagina-img {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.piePagina img {
+  width: 100%;
+}
+
+.piePagina .redes_sociales {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+.piePagina .redes_sociales > .twitter {
+  color: #00acee;
+}
+
+.piePagina .redes_sociales > .facebook {
+  color: #3b5998;
+}
+
+.piePagina .redes_sociales > .instagram {
+  color: #cc6666;
 }
 
 aside {

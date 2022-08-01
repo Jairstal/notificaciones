@@ -83,6 +83,39 @@ main,
   color: #d40404;
 }
 
+#search-box {
+  width: 90%;
+  padding: 8px 0 12px 1em;
+  align-items: center;
+  display: inline-grid;
+  color: #333;
+  outline: none;
+}
+
+#search-form {
+  border: 1px solid #151717;
+  border-radius: 15px;
+  background-color: #eae2e2;
+  overflow: hidden;
+  width: 50%;
+  display: flex;
+  position: relative;
+  left: 320px;
+}
+#search-text {
+  font-size: 14px;
+  color: #ddd;
+  border-width: 0;
+  background: transparent;
+}
+
+#search-box input[type="text"] {
+  width: 90%;
+  padding: 8px 0 12px 1em;
+  color: #333;
+  outline: none;
+}
+
 .contenedor {
   width: 90%;
   max-width: 1000px;
@@ -102,6 +135,11 @@ main,
   align-items: center;
   justify-content: center;
   display: flex;
+  visibility: hidden;
+}
+
+.overlay.active {
+  visibility: visible;
 }
 
 .popup {
@@ -112,6 +150,7 @@ main,
   padding: 20px;
   text-align: center;
   width: 600px;
+
   transition: 0.3s ease all;
   transform: scale(0.7);
   opacity: 0;
@@ -180,6 +219,10 @@ main,
 /* ------------------------- */
 /* ANIMACIONES */
 /* ------------------------- */
+.popup.active {
+  transform: scale(1);
+  opacity: 1;
+}
 .popup.active h3 {
   animation: entradaTitulo 0.8s ease 0.5s forwards;
 }

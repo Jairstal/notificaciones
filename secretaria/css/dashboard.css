@@ -1,0 +1,12 @@
+@import 'dashboard-reset.css';
+@import 'dashboard-generales.css';
+@import 'dashboard-estructura.css';
+@import 'dashboard-navbar.css';
+@import 'dashboard-sidebar.css';
+@import 'dashboard-main-content.css';
+@import 'dashboard-formulario.css';
+@import 'dashboard-footer.css';
+@import 'popup.css';
+
+/* Por pagina */
+@import 'dashboard-audiencias.css';
